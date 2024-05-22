@@ -18,12 +18,19 @@ pip install pyxel
 ```
 ## Utilisation
 
-lancer le scipt main.py: 
+lancer le scipt main.py pour tester: 
 ```cmd
 python main.py
 ```
 
+deployer le code sur github:
+```cmd
+python tools\compile.py
+```
+
+voir le code sur la platforme [pyxel](https://kitao.github.io/pyxel/wasm/launcher/?play=raiseFlaymeException.ndc-2024.run&gamepad=enabled)
+
 ## Responsables
 
-[@raiseFlaymeException](https://github.com/raiseFlaymeException).
-[TODO](TODO)
+- [@raiseFlaymeException](https://github.com/raiseFlaymeException)
+- [@cryspique](https://github.com/cryspique)

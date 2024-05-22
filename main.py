@@ -12,7 +12,7 @@ from sprites.PlayerClass import Player
 state = config.STATE_FIRST_LAUNCH
 player = Player()
 pinguins = []
-sounds = sound.Sound("ressource\\sounds.json")
+sounds = sound.Sound("sounds.json")
 
 
 def draw():
