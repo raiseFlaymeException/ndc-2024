@@ -70,7 +70,7 @@ def update():
 def main():
     pyxel.init(config.WIDTH, config.HEIGHT, config.TITLE, config.FPS)
 
-    pyxel.load("ressource\\res.pyxres")
+    pyxel.load("res.pyxres")
 
     player.focus()
 
