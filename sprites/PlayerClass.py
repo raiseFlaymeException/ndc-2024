@@ -77,10 +77,13 @@ class Player():
                 self.jumpHeight = +2
 
         # implementation des jump pad
-        if self.canGoDown(COL_SPE):
-            self.jumpBoost = 2
-        elif self.canGoDown(COL+COL_DOWN):
-            self.jumpBoost = 1
+        # doit etre sur une tile
+        if ((self.coords[1]+self.height) % 8) == 0:
+            # si on peut pas aller en bas sa veut dire qu'il n'a pas de pad
+            if self.canGoDown(COL_SPE):
+                self.jumpBoost = 1
+            elif self.canGoDown(COL+COL_DOWN):
+                self.jumpBoost = 2
 
     def move(self):
         # touches

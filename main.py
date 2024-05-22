@@ -46,6 +46,7 @@ def draw():
 
 def update():
     global state
+
     if player.coords[1] > 128:
         state = config.STATE_GAMEOVER
 
