@@ -28,7 +28,7 @@ deployer le code sur github:
 python tools\compile.py
 ```
 
-voir le code sur la platforme [pyxel](https://kitao.github.io/pyxel/wasm/launcher/?play=raiseFlaymeException.ndc-2024.run&gamepad=enabled)
+voir le code sur la platforme [pyxel](https://kitao.github.io/pyxel/wasm/launcher/?play=raiseFlaymeException.ndc-2024.run)
 
 ## Responsables
 
