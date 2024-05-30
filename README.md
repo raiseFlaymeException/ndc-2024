@@ -1,8 +1,8 @@
 # Nuit du code 2024
 
-Notre projet pour la nuit du code 2024 que l'on a décider de continuer:
+Fork de notre projet pour la nuit du code 2024 que l'on a décider de continuer (version de [@cryspique](https://github.com/cryspique)):
 
-Pinguin-Run
+Titre initial : Pinguin-Run
 
 ## Table des matières
 

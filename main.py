@@ -1,7 +1,5 @@
 import pyxel
-
 import config
-
 import pause
 import sound
 
@@ -13,6 +11,12 @@ state = config.STATE_FIRST_LAUNCH
 player = Player()
 pinguins = []
 sounds = sound.Sound("sounds.json")
+
+
+def restart():
+    global state
+    state = config.STATE_PLAY
+    player.__init__()
 
 
 def draw():
@@ -30,6 +34,10 @@ def draw():
                    config.WIDTH, 0, config.WIDTH, config.HEIGHT)
         pyxel.text(player.real_x2camera_x(config.WIDTH/2-18),
                    config.HEIGHT/2-2, "GAME OVER", pyxel.COLOR_RED)
+        pyxel.text(player.real_x2camera_x(config.WIDTH/2-13),
+                   config.HEIGHT/2+30, "RESTART", pyxel.COLOR_RED)
+        if pause.button_colide_with_mouse((48, 88, 80, 104)) and pyxel.btn(pyxel.MOUSE_BUTTON_LEFT):
+            restart()
     else:
         if state == config.STATE_FIRST_LAUNCH:
             pyxel.cls(config.COLOR_BG_MENU)
