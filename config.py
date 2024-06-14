@@ -19,7 +19,7 @@ STATE_GAMEOVER = 3
 # ======================================
 DIR_PLAYER_EAST = 0
 DIR_PLAYER_WEST = 1
-PLAYER_JUMP_LIST = [0,-1,-5,-3,-1,2,3]
+PLAYER_JUMP_LIST = [0, -1, -5, -3, -1, 2, 3]
 
 # ======================================
 # TITLE

@@ -60,6 +60,7 @@ def update():
 
     if pyxel.btn(config.KEY_PAUSE):
         state = config.STATE_PAUSE
+        sounds.pause_sound()
 
     if state == config.STATE_PLAY:
         player.move()
@@ -72,7 +73,7 @@ def update():
     elif state == config.STATE_GAMEOVER:
         pass
     else:
-        state = pause.update_pause(state)
+        state = pause.update_pause(state, sounds)
 
 
 def main():
