@@ -61,11 +61,15 @@ def update_pause(state: int, sounds: sound.Sound) -> int:
         sounds (sound.Sound): les sons (pour eteindre ceux ci)
 
     Returns:
-        (int): le nouvelle etat
+        (int): le nouvelle etat du jeu
     """
     pyxel.mouse(True)
-    if button_colide_with_mouse(config.BUTTON_PLAY) and \
-            pyxel.btn(pyxel.MOUSE_BUTTON_LEFT):
+    if (button_colide_with_mouse(config.BUTTON_PLAY) and
+            pyxel.btn(pyxel.MOUSE_BUTTON_LEFT)):
         state = config.STATE_PLAY
         sounds.play_sound()
+    elif pyxel.btn(config.KEY_PAUSE):
+        state = config.STATE_PLAY_DISABLE_PAUSE
+        sounds.play_sound()
+
     return state

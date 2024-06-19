@@ -11,8 +11,9 @@ HEIGHT = 128
 # ======================================
 STATE_FIRST_LAUNCH = 0
 STATE_PAUSE = 1
-STATE_PLAY = 2
-STATE_GAMEOVER = 3
+STATE_PLAY_DISABLE_PAUSE = 2
+STATE_PLAY = 3
+STATE_GAMEOVER = 4
 
 # ======================================
 # DIR_PLAYER
